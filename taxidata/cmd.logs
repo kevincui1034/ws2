@@ -1,0 +1,29 @@
+    1  mkdir ws2
+    2  cd ws2
+    3  cp /datasets/taxidata.tar.gz .
+    4  ls
+    5  tar --help
+    6  ls
+    7  gunzip taxidata.tar.gz
+    8  ls
+    9  tar --help
+   10  tar -xf taxidata.tar
+   11  ls
+   12  cd taxidata
+   13  ls
+   14  grep ".*,.*,\"2019-03-12.*" 2019-03.csv
+   15  grep ".*,.*,\"2019-03-12.*" 2019-03.csv | tail -n 20 > results2.txt
+   16  ls
+   17  vim results2.txt
+   18  wc results2.txt
+   19  wc ".*,.*,\"2019-03-12.*" 2019-03.csv >> results2.txt
+   20  ls
+   21  vim results2.txt
+   22  cd
+   23  ls
+   24  cd ws2
+   25  git init
+   26  git commit -m "first commit"
+   27  cd taxidata
+   28  ls
+   29  history >cmd.logs
